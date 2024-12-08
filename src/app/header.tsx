@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -8,18 +9,18 @@ export default function Header() {
                 <div className="logo"><Image src="/img/logo.png" alt="Logo" width={200} height={100} /></div>
                 <div className="topmenu">
                     <ul className="topcenter">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link href="#">Home</Link></li>
+                        <li><Link href="#">Shop</Link></li>
+                        <li><Link href="#">Blog</Link></li>
+                        <li><Link href="#">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="topbaricons">
                 <ul className="topright">
-                    <li><a href="#"><Image src="/img/alert-outline.png" width={28} height={28} /></a></li>
-                    <li><a href="#"><Image src="/img/search.png" width={28} height={28} /></a></li>
-                    <li><a href="#"><Image src="/img/heart.png" width={28} height={28} /></a></li>
-                    <li><a href="#"><Image src="/img/shopping-cart.png" width={28} height={28} /></a></li>                    
+                    <li><Link href="#"><Image src="/img/alert-outline.png" alt={"Images"} width={28} height={28} /></Link></li>
+                    <li><Link href="#"><Image src="/img/search.png" alt={"Images"} width={28} height={28} /></Link></li>
+                    <li><Link href="#"><Image src="/img/heart.png" alt={"Images"} width={28} height={28} /></Link></li>
+                    <li><Link href="#"><Image src="/img/shopping-cart.png" alt={"Images"} width={28} height={28} /></Link></li>                    
                 </ul>
                 </div>
             </div>
